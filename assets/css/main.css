@@ -3348,12 +3348,36 @@ input, select, textarea {
 		@media screen and (max-width: 736px) {
 
 			#nav {
-				display: none;
+				display: block;
+				overflow-x: auto;
+				white-space: nowrap;
+				-webkit-overflow-scrolling: touch;
 			}
 
-				#nav + #main {
-					padding-top: 0;
-				}
+			#nav ul {
+				display: flex;
+				flex-wrap: nowrap;
+				justify-content: flex-start;
+				gap: 0.5em;
+				width: max-content;
+				min-width: 100%;
+			}
+
+			#nav ul li {
+				margin: 0;
+			}
+
+			#nav ul li a {
+				font-size: 0.9em;
+				padding: 0 0.8em;
+				white-space: nowrap;
+			}
+
+			#nav + #main {
+				padding-top: 4.25em;
+			}
+
+
 
 		}
 
@@ -3730,28 +3754,7 @@ input, select, textarea {
 
 		}
 
-		<footer id="footer">
-			<section class="contact-block">
-				<h2>Contact</h2>
-
-				<p class="contact-item">
-					<span class="icon solid fa-map-marker-alt"></span>
-					<span>Aarhus, Denmark</span>
-				</p>
-
-				<p class="contact-item">
-					<span class="icon solid fa-envelope"></span>
-					<a href="mailto:chengjiaoli88@outlook.com">chengjiaoli88@outlook.com</a>
-				</p>
-
-				<p class="contact-item">
-					<span class="icon brands fa-linkedin-in"></span>
-					<a href="https://www.linkedin.com/in/chengjiao-li-96b55ba3/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-				</p>
-			</section>
-
-			<p class="copyright">&copy; Chengjiao Li. Design adapted from HTML5 UP.</p>
-		</footer>		
+	
 
 /* Global text spacing */
 
