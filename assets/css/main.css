@@ -3679,86 +3679,6 @@ input, select, textarea {
 
 		}
 
-/* Footer */
-
-	#footer {
-		display: -moz-flex;
-		display: -webkit-flex;
-		display: -ms-flex;
-		display: flex;
-		-moz-flex-wrap: wrap;
-		-webkit-flex-wrap: wrap;
-		-ms-flex-wrap: wrap;
-		flex-wrap: wrap;
-		padding: 5em 5em 3em 5em ;
-		width: calc(100% + 2em);
-		margin: 0 0 3em -2em;
-	}
-
-		#footer > * {
-			width: calc(50% - 2em);
-			margin-left: 2em;
-		}
-
-		#footer .copyright {
-			width: 100%;
-			margin: 2.5em 0 2em 0;
-			font-size: 0.8em;
-			text-align: center;
-		}
-
-		@media screen and (max-width: 1280px) {
-
-			#footer {
-				padding: 4em 4em 2em 4em ;
-			}
-
-		}
-
-		@media screen and (max-width: 980px) {
-
-			#footer {
-				padding: 4em 3em 2em 3em ;
-				display: block;
-				margin: 0 0 3em 0;
-				width: 100%;
-			}
-
-				#footer > * {
-					width: 100%;
-					margin-left: 0;
-					margin-bottom: 3em;
-				}
-
-				#footer .copyright {
-					text-align: left;
-				}
-
-		}
-
-		@media screen and (max-width: 736px) {
-
-			#footer {
-				padding: 3em 2em 1em 2em ;
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#footer {
-				padding: 3em 1.5em 1em 1.5em ;
-			}
-
-		}
-
-		@media screen and (max-width: 480px) {
-
-			#footer {
-				padding: 2.5em 1em 0.5em 1em ;
-			}
-
-		}
 
 /* Wrapper */
 
@@ -3807,62 +3727,83 @@ input, select, textarea {
 			<p class="copyright">&copy; Chengjiao Li. Design adapted from HTML5 UP.</p>
 		</footer>		
 
-/* Experience clean style */
+/* Global text spacing */
 
-	.experience-item {
-		margin-bottom: 2.5em;
+	p {
+		line-height: 1.45;
+		margin: 0 0 1em 0;
 	}
 
-	.experience-item h3 {
-		font-weight: 600;
-		margin-bottom: 0.3em;
+	#main p {
+		line-height: 1.38;
+		margin: 0 0 1em 0;
 	}
 
-	.experience-tagline {
-		font-style: italic;
-		color: #888;
-		margin-bottom: 0.8em;
+/* Footer refinement */
+
+#footer {
+	padding: 2.2em 5em 1.1em 5em;
+	display: block;
+	margin: 0;
+	width: 100%;
+}
+
+#footer .compact-contact {
+	max-width: 42em;
+}
+
+#footer .compact-contact h2 {
+	margin-bottom: 0.65em;
+	font-size: 1.2em;
+}
+
+#footer .contact-row {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.8em 1.6em;
+	align-items: center;
+}
+
+#footer .contact-item {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.45em;
+	margin: 0;
+}
+
+#footer .contact-item .icon {
+	font-size: 0.95em;
+}
+
+#footer .contact-item a {
+	border-bottom: none;
+}
+
+#footer .contact-item a:hover {
+	text-decoration: underline;
+}
+
+#footer .copyright {
+	margin: 0.9em 0 0 0;
+	font-size: 0.78em;
+	opacity: 0.9;
+	text-align: left;
+}
+
+@media screen and (max-width: 980px) {
+	#footer {
+		padding: 2em 3em 1em 3em;
 	}
 
-	.experience-item p {
-		margin-bottom: 0.5em;
-		line-height: 1.7;
+	#footer .contact-row {
+		flex-direction: column;
+		align-items: flex-start;
+		gap: 0.65em;
 	}
-
-/* Fix paragraph spacing (more compact for professional look) */
-
-#main p {
-	line-height: 1.6;
-	margin-bottom: 1.2em;
 }
 
-/* Section spacing tighter */
-
-section.main {
-	padding: 3em 2em;
-}
-
-/* Header spacing */
-
-header.major {
-	margin-bottom: 2em;
-}
-
-/* Fix paragraph spacing (more compact for professional look) */
-
-#main p {
-	line-height: 1.6;
-	margin-bottom: 1.2em;
-}
-
-/* Section spacing tighter */
-
-section.main {
-	padding: 3em 2em;
-}
-
-/* Header spacing */
-
-header.major {
-	margin-bottom: 2em;
+@media screen and (max-width: 736px) {
+	#footer {
+		padding: 1.8em 2em 0.9em 2em;
+	}
 }
