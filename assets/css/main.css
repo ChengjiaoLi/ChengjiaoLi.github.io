@@ -3806,3 +3806,63 @@ input, select, textarea {
 
 			<p class="copyright">&copy; Chengjiao Li. Design adapted from HTML5 UP.</p>
 		</footer>		
+
+/* Experience clean style */
+
+	.experience-item {
+		margin-bottom: 2.5em;
+	}
+
+	.experience-item h3 {
+		font-weight: 600;
+		margin-bottom: 0.3em;
+	}
+
+	.experience-tagline {
+		font-style: italic;
+		color: #888;
+		margin-bottom: 0.8em;
+	}
+
+	.experience-item p {
+		margin-bottom: 0.5em;
+		line-height: 1.7;
+	}
+
+/* Fix paragraph spacing (more compact for professional look) */
+
+#main p {
+	line-height: 1.6;
+	margin-bottom: 1.2em;
+}
+
+/* Section spacing tighter */
+
+section.main {
+	padding: 3em 2em;
+}
+
+/* Header spacing */
+
+header.major {
+	margin-bottom: 2em;
+}
+
+/* Fix paragraph spacing (more compact for professional look) */
+
+#main p {
+	line-height: 1.6;
+	margin-bottom: 1.2em;
+}
+
+/* Section spacing tighter */
+
+section.main {
+	padding: 3em 2em;
+}
+
+/* Header spacing */
+
+header.major {
+	margin-bottom: 2em;
+}
