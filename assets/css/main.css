@@ -3971,3 +3971,12 @@ input, select, textarea {
 	margin: 0 0.35rem;
 	opacity: 0.7;
 }
+
+.dashboard-fit {
+	width: 100%;
+	max-width: 1000px;
+	height: auto;
+	display: block;
+	margin: 0 auto;
+	border-radius: 8px;
+}
